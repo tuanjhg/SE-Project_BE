@@ -1,4 +1,4 @@
-const Food = require('../models/food');
+const Food = require  ('../models/food');
 
 async function getAllFoodItems() {
     try {
@@ -8,7 +8,4 @@ async function getAllFoodItems() {
         throw new Error('Error fetching food items:', error);
     }
 }
-
-module.exports = {
-    getAllFoodItems
-};
+module.exports = getAllFoodItems; 
